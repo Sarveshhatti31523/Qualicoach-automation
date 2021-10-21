@@ -30,18 +30,16 @@ public class User_CreateTest {
 		enCo.adminClick().click();
 		enCo.userclick().click();
 		enCo.addUser().click();
-		enCo.inputName().sendKeys("kuroku");
+		enCo.inputName().sendKeys("kagamikise");
 		driver.findElement(By.cssSelector("span[data-passwordunmask='displayvalue']")).click();
 		enCo.inputPass().sendKeys("Kuroku");
 		enCo.inputFirstName().sendKeys("first");
 		enCo.inputLastName().sendKeys("last");
-		enCo.inputEmail().sendKeys("gdioidg@gmail.com");
+		enCo.inputEmail().sendKeys("gdplmdg@gmail.com");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		Thread.sleep(4000);
 		enCo.submit().click();
-	//	driver.findElement(submit).click();
-		//driver.findElement(By.xpath("//input[text()='CREATE USER']")).click();
-		
+		//driver.close();
 	}
 }

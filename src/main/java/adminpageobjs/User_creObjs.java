@@ -60,6 +60,6 @@ public WebElement userButton() {
 	}
 	
 	public WebElement submit() {
-		return driver.findElement(By.xpath("//*[@type='submit']"));
+		return driver.findElement(By.xpath("//fieldset[@class='hidden'] / div / div / div / input[1]"));
 	}
 }

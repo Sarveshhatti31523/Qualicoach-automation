@@ -29,8 +29,8 @@ public class UserLogin extends firstInitialization{
 	
 	public void adminlogin() {
 		driver.get("https://test.qualicoach.org/ ");
-		driver.findElement(By.id("username")).sendKeys("admin73");
-		driver.findElement(By.id("password")).sendKeys("Admin@6100");
+		driver.findElement(By.id("username")).sendKeys("admin58");
+		driver.findElement(By.id("password")).sendKeys("Admin@9146");
 		driver.findElement(By.id("loginbtn")).click();
 	}
 	

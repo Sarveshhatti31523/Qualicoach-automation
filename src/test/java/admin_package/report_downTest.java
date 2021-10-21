@@ -31,7 +31,7 @@ public class report_downTest {
 		JavascriptExecutor js= (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,1000)");
 		driver.findElement(By.xpath("//div[@class='centerpara'] /a /img[@alt='csv']")).click();
-		
+		//driver.close();
 		
 	}
 }

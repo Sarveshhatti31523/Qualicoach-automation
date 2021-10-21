@@ -16,6 +16,7 @@ firstInitialization fn=new firstInitialization();
 	
 @Test
 	public void user_deletion() throws IOException {
+	try {
 		WebDriver driver=fn.init();
 		UserLogin us=new UserLogin(driver);
 		us.adminlogin();
@@ -27,16 +28,14 @@ firstInitialization fn=new firstInitialization();
 		del.adminClick().click();
 		del.userclick().click();
 		del.browseUser().click();
-		del.textEnter().sendKeys("ajat singh");
+		del.textEnter().sendKeys("first");
 		del.filterclick().click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,1000)");
 		del.rowclick().click();
 		del.deleclick().click();
+		//driver.close();
 		
-		
-		
-		
-		
-	}
-}
+	}catch(Exception e){System.out.println("Given User does not exist");} 
+	
+}}

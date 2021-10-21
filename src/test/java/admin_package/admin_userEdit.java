@@ -42,6 +42,7 @@ public class admin_userEdit {
 		dropdown.selectByValue("IN");
 		js.executeScript("window.scrollBy(0,1000)");
 		ue.updateclick().click();
+		//driver.close();
 }
 }
 

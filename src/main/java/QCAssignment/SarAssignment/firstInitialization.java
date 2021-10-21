@@ -22,7 +22,7 @@ public class firstInitialization {
 	    String str=prop.getProperty("browser");
 	    
 	    if(str.equals("chrome")) {
-	    	System.setProperty("webdriver.chrome.driver", "F:\\chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
 			driver= new ChromeDriver();		
 	    }
 	    

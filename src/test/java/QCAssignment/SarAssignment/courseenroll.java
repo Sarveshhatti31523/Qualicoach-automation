@@ -16,7 +16,7 @@ public class courseenroll {
 	firstInitialization fn=new firstInitialization();
 	
 	public void enrollTest() throws IOException {
-		
+		try {
 		WebDriver driver=fn.init();
 		UserLogin us=new UserLogin(driver);
 		us.userlogin();
@@ -30,8 +30,8 @@ public class courseenroll {
 		a.moveToElement(move).click().build().perform();
 		en.enrollclick().click();
 		
-	} 
+	}catch(Exception e){System.out.println("This course is already enrolled");} 
 }
-
+}
 
 //Cucumber 101

@@ -16,7 +16,7 @@ public class attemptQuiz {
 	firstInitialization fn=new firstInitialization();
 	
 	public void Quiz() throws IOException {
-		
+		try {
 		WebDriver driver=fn.init();
 		UserLogin us=new UserLogin(driver);
 		us.userlogin();
@@ -32,9 +32,9 @@ public class attemptQuiz {
 		qo.attemptquiz().click();
 		qo.startquiz().click();
 		
-	}  
+	}catch(Exception e){System.out.println("No quiz is available");}  
 }
-
+}
 
 //ISTQB-ISEB
 //SQL

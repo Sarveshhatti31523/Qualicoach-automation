@@ -14,7 +14,7 @@ public class quizobject {
 	}
 	
 	public WebElement hover() {
-		return driver.findElement(By.xpath("//div[@cat-id='3'] /a /p[text()='ISTQB-ISEB']"));
+		return driver.findElement(By.xpath("//div[@cat-id='3'] /a /p[text()='SQL']"));
 	}
 	
 	public WebElement modulequiz() {
